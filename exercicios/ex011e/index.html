@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Imagens <strong>dinamicas</strong></h1>
+    <picture>
+        <source media="(max-width: 500px)" srcset="media/imagem-256.jpg">
+        <source media="(max-width: 750px)" srcset="media/imagem-512.jpg">
+        <source media="(max-width: 1000px)" srcset="media/imagem-768.jpg">
+        <img src="media/imagem-1024.jpg" alt="Ilustracao rato e cobra">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <audio src="media/guanacast-33.mp3" preload="metadata" controls >
+        <p>Infelizmente o seu navegador nao consegue reproduzir audio<a href="media/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <!--Compativeis MP3 WAV OGG-->
+</body>
+</html>

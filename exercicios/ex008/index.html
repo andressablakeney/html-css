@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formataçao de textos</title>
+</head>
+<body>
+    <h1>Principais formatacoes semanticas</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando &lt;b&gt; (nao semantico) </p>
+    <p>Nesta frase tenho um <strong>termo em destaque</strong> usando &lt;strong&gt; &#x1F44D;</p>
+    <h2>Italico / Enfase</h2>
+    <p>Nesta frase temos um <i>termo em italico</i> usando &lt;i&gt; (nao sematico) </p> <!--Seleciona as palavras em que vc quer por no apertar Ctrl + Shift + p , vai abrir uma janelinha em cima e vc digita abb e clica em Wrap with abbreviation-->
+    <p>Nesta frase temos um <em>termo em italico</em> usando &lt;em&gt; &#x1F44D; </p>
+    <h2>Mark</h2>
+    <p>Podemos criar tambem um <mark>texto marcado</mark> com a tag &lt;mark&gt;</p>
+    <p>Podemos criar tambem um <mark style="background-color: rgb(91, 229, 91);">texto marcado</mark> e com um pouco de css podemos mudar a cor da tag &lt;mark&gt;</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse paragrafo</p> <p>O &lt;big&gt; que deixava o texto maior (funciona ainda mas é obsoleto) esta depreciada pela HTML5, mas o &lt;small&gt; ainda existe</p>
+    <h2>Texto deletado e inserido</h2>
+    <p>Podemosmarcar um <del>texto como deletado</del> para fazer com que ele seja lido mas nao considerado</p>
+    <p>Podemos marcar <ins>texto como inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois</del></p>
+    <h2>Texto sobrescrito</h2>
+    <p>Podemos inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Podemos inserir coisas do tipo H<sub>2</sub>O</p>
+    <h2>Trechos de codigo</h2>
+    <p>Para digitar um trecho de codigo usamos &lt;pre&gt; e &lt;code&gt; como veremos abaixo: </p>
+    <pre><code>
+        num = int(input('Digite um numero'))
+        if num % 2 == 0:
+            print(f'O numero {num} é par')
+        else: 
+            print(f'O numero {num} é impar')
+        print('FIM DO PROGRAMA')
+    </code></pre>
+    <h2>Citacoes</h2>
+    <p>Para fazer citaçoes se deve usar a tag &lt;q&gt; para citacoes sem deslocamento, <q>Como esta</q> e &lt;blockquote&gt; para <blockquote cite="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/08%20-%20Formata%C3%A7%C3%A3o%20de%20Textos.pdf" >Uma citacao como esta</blockquote> </p> <!--Para adicionar um link da fonte podemos usar o parametro cite dentro da tag-->
+    <h2>Abreviacoes</h2>
+    <p>é possivel fazer abreviacoes com o <abbr title="Hyper Text Markup Language">HTML</abbr> (no navegador, passe o mouse sobre a abreviaçao)</p>
+
+
+    <h1>Recomendacao do Guanabara</h1>
+    <p>Evitar usar &lt;b&gt; e &lt;i&gt;</p>
+    
+
+</body>
+</html>

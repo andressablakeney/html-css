@@ -1,0 +1,74 @@
+<DOCTYPE! html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio com caixas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad&display=swap');
+
+        * {
+            font-family: "Playwrite US Trad", cursive;
+        }
+
+        h1 {
+           text-align: center;
+        }
+
+        div#principal {
+            display: flex;
+            flex-direction: column;
+        }
+
+        div#principal > .row {
+            display: none;
+        } 
+
+        div#instruction {
+            border: 10px solid aquamarine;
+            border-radius: 5px;
+            margin: 0px 50px;
+            padding: 10px;
+            text-align: center;
+        }       
+
+        div#principal:hover > .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        
+        .row > .children {
+        display: flexbox;
+        width: 100px;
+        height: 100px;
+        margin: 10px 5px;
+        background-image: linear-gradient(to top, blue,  aquamarine 80%);
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+        }
+
+        .row > .children::after {
+            content: ' caixas';
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Exercicio de modelo de caixas + pseudoclasses e pseudoelementos</h1>
+    <div id="principal"><div id="instruction">Passe o mouse sobre essa caixa</div>
+    <div class="row">
+        <div class="children"><p>Uma</p></div>
+        <div class="children"><p>Duas</p></div>
+        <div class="children"><p>Tres</p></div>
+    </div></div>
+
+</body>
+
+</html>
+</DOCTYPE>

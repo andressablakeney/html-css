@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > div {
+            display: none;
+            background-image: linear-gradient(to right, cyan, yellow );
+            width: 100px;
+            height: 100px;
+            border: 3px solid purple;
+        }
+
+        div:hover > div {
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Hover</h1>
+    <div>Quando passar o mouse nesse texto <br>
+        <div>Aparecerao</div>
+        <div>tres</div>
+        <div>Caixas</div>
+
+    </div>
+
+
+</body>
+
+</html>

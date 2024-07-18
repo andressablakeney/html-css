@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Idroid';
+    src: url(fonts/idroid.otf) format('opentype');
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #84E1AD;
+    margin: 0px;
+}
+
+p {
+    text-indent: 3%;
+}
+
+
+/* HEADER */
+header {
+    background-image: linear-gradient(to top, #1A5C38, #2FA866);
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+header > h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header > p {
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    margin: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+}
+/* end HEADER*/
+
+/* MAIN */
+main {
+    background-color: white;
+    max-width: 70vw;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+main h1 {
+    font-family: 'Idroid';
+    color: #2FA866;
+}
+
+main h2 {
+    font-family: 'Idroid';
+    background-color: #84E1AD40;
+    color: #1A5C38;
+}
+
+main img {
+    max-width: 100%;
+    margin: auto;
+}
+
+main a {
+    color: #2FA866;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a::after {
+        content: ' \01F517';
+    
+}
+#video {
+    background-color: #1A5C38;
+    padding: 20px;
+    margin: 0px -20px 20px -20px;
+}
+
+#video iframe{
+    margin: auto;
+}
+
+/* EXTRA */
+
+#extratitulo {
+    background-color: #2FA866;
+    padding: 5px 5px;
+    margin-bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#extratitulo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.2em;
+
+}
+#extratexto {
+    margin-top: 0px;
+    background-color: #84E1AD50;
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px 5px 5px 5px;
+}
+ 
+
+/* end EXTRA */
+
+/* end MAIN */
+
+
+footer {
+    background-color: #1A5C38;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
